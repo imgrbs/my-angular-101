@@ -2,22 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import {MatRadioModule} from '@angular/material/radio';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TitleComponent } from './title/title.component';
-import { ButtonComponent } from './button/button.component';
-import { PostListComponent } from './post-list/post-list.component';
-import { PostCardComponent } from './post-card/post-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TitleComponent } from './title/title.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitleComponent,
-    ButtonComponent,
-    PostListComponent,
-    PostCardComponent
+    CardComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

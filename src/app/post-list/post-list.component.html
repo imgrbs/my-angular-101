@@ -1,9 +1,6 @@
 <div id="post-list">
-    <ul>
-        <li *ngFor="let post of posts">
-            {{ post.title }}
-        </li>
-    </ul>
+    <app-post-card *ngFor="let post of posts" [post]="post">
+    </app-post-card>
 </div>
 
 <app-button (notify)="getPosts()"></app-button>
